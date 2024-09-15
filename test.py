@@ -1,21 +1,18 @@
 from main import add
 
+import unittest
+import pandas as pd
 
-def test_add():
-    """Testing the add function"""
-    assert add(2, 2) == 4
-    assert add(3, 2) == 5
-    print("hello")
+class TestDataProcessing(unittest.TestCase):
+    def setUp(self):
+        self.df = pd.read_csv('your_dataset.csv')
 
+    def test_summary_statistics(self):
+        summary_stats = self.df.describe(include='all')
+        self.assertTrue(not summary_stats.empty, "Summary statistics should not be empty")
 
-def test_add2():
-    """testing out add function"""
-    assert add(2, 2) == 4
-    assert add(3, 2) == 5
-    assert add(1, 2) == 3
-    print("hello again")
+    # Add more test cases as needed
 
+if __name__ == '__main__':
+    unittest.main()
 
-if __name__ == "__main__":
-    test_add()
-    test_add2()
