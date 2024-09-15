@@ -16,6 +16,5 @@ The purpose of this assignment was to create a  Python template to be used for f
 - Generate summary statistics (mean, median, standard deviation)
 - Create at least one visualization
 
-The main function (defined in main.py) is the add function, which takes two variables, num1 and num2, and returns their sum. Tests for this function are defined in test.py
-
-In order to use this template, load the repository to codespace or your local machine
+# Data Set Used in this Projecy
+The data set used in this project, StudentPerformanceFactors.csv, was pulled from kaggle.com, a website offering public domain data sets. This data is described as a "comprehensive overview of various factors affecting student performance in exams", including data for student's grade on a final exam as well as information on various factors that may affect their exam performance, such as # of hours studied, percentage of classes attended, parental involvement (Low, Medium, High), and many others.
