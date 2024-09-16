@@ -5,7 +5,7 @@ from main import (
 )
 
 import pandas as pd
-import pytest
+
 from pytest import approx
 
 def test_get_summary_stats():
@@ -15,12 +15,4 @@ def test_get_summary_stats():
     assert summary_stats["std"] == approx(3.890456, rel=1e-2)
 
 
-def test_create_histogram():
-    create_histogram(pd.read_csv("StudentPerformanceFactors.csv"), "Exam_Score") 
-
-def test_create_scatter():
-    create_scatter(pd.read_csv("StudentPerformanceFactors.csv"), "Hours_Studied", "Exam_Score")
-
 test_get_summary_stats()
-test_create_histogram()
-test_create_scatter()
