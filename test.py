@@ -1,7 +1,5 @@
 from main import (
-    get_summary_stats,
-    create_histogram,
-    create_scatter
+    get_summary_stats
 )
 
 import pandas as pd
