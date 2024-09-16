@@ -1,17 +1,26 @@
-from main import add
+from main import (
+    readcsv,
+    get_summary_stats,
+    create_histogram,
+    create_scatter
+)
 
 import pandas as pd
 
-class TestDataProcessing(unittest.TestCase):
-    def setUp(self):
-        self.df = pd.read_csv('your_dataset.csv')
+def test_get_summary_stats():
+    summary_stats= (pd.read_csv("StudentPerformanceFactors.csv")).describe()
+    assert summary_stats["mean"] == 67.235659
+    assert summary_stats["50%"] == 67
+    assert summary_stats["std"] == 3.890456
 
-    def test_summary_statistics(self):
-        summary_stats = self.df.describe(include='all')
-        self.assertTrue(not summary_stats.empty, "Summary statistics should not be empty")
 
-    # Add more test cases as needed
 
-if __name__ == '__main__':
-    unittest.main()
+def test_create_histogram():
+    create_histogram(pd.read_csv("StudentPerformanceFactors.csv"), "Exam_Score") 
 
+def test_create_scatter():
+    create_scatter(pd.read_csv("StudentPerformanceFactors.csv"), "Hours_Studied", "Exam_Score")
+
+test_get_summary_stats()
+test_create_histogram()
+test_create_scatter()

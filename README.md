@@ -19,6 +19,8 @@ The purpose of this assignment was to create a  Python template to be used for f
 # Data Set Used in this Project
 The data set used in this project, StudentPerformanceFactors.csv, was pulled from kaggle.com, a website offering public domain data sets. This data is described as a "comprehensive overview of various factors affecting student performance in exams", including data for 6,607 students's grade on a final exam as well as information on various factors that may affect their exam performance, such as # of hours studied, percentage of classes attended, parental involvement (Low, Medium, High), and many others.
 
+# Example Summary Statistics
+![alt text](image.png)
 # Example Data Visualizations
 Histogram of final exam scores generating using the create_scatter function in main.py
 ![image](https://github.com/user-attachments/assets/d6db7e62-b8dc-40ee-836a-d8da33178115)

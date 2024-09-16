@@ -35,8 +35,6 @@ if __name__ == "__main__":
     # read the csv
     df = readcsv("StudentPerformanceFactors.csv")
 
-
-
     # get summary stats: mean, median, sd
     summary_stats = get_summary_stats(df, "Exam_Score")
     print(summary_stats)
