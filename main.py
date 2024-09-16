@@ -28,7 +28,7 @@ def create_scatter(data, x_col, y_col):
     plt.title(x_col +" vs. "+ y_col)
     plt.xlabel(x_col)
     plt.ylabel(y_col)
-    plt.show()
+    plt.show() 
 
 
 if __name__ == "__main__":
