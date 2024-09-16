@@ -33,12 +33,12 @@ def create_scatter(data, x_col, y_col):
 
 if __name__ == "__main__":
     # read the csv
-    df = readcsv("StudentPerformanceFactors.csv")
+    student_data= readcsv("StudentPerformanceFactors.csv")
 
     # get summary stats: mean, median, sd
-    summary_stats = get_summary_stats(df, "Exam_Score")
+    summary_stats = get_summary_stats(student_data, "Exam_Score")
     print(summary_stats)
 
     # create visualizations
-    create_histogram(df, "Exam_Score")
-    create_scatter(df, "Hours_Studied", "Exam_Score")
+    create_histogram(student_data, "Exam_Score")
+    create_scatter(student_data, "Hours_Studied", "Exam_Score")
