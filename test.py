@@ -1,5 +1,4 @@
 from main import (
-    readcsv,
     get_summary_stats,
     create_histogram,
     create_scatter
